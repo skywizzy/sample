@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="asset/img/bg.jpg">
+    <header>
+        <div>
+            <table width="33%">
+                <tr>
+                    <th>
+                        <img src="asset/img/logo.PNG" alt="company_logo">
+                    </th>
+                    <th>
+                        <h1>
+                            <font color="purple" size="5">Polgate Xframe Portal</font>
+                        </h1>
+                    </th>
+                </tr>
+            </table>
+            <hr color="red" size="1">
+            <hr color="red" size="3">
+        </div>
+        <div>
+            <table width="100%" height="80px" background="asset/img/header.jpg">
+                <tr>
+                    <th>
+                        <h1>
+                            <font color="lightblue" size="8">Registration Form</font>
+                            <br>
+                            <font size="4"><a href="#"><font color="lightblue">Home</font></a><font color="lightblue"> &nbsp;&nbsp;/ &nbsp;&nbsp;</font><a href="#"><font color="lightblue">Register</font></a></font>
+                        </h1>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <main>
+        <br><br><br>
+        <form action="singup_processing.html" method="" enctype="multipart/form-data">
+            <table width="70%" align="center" cellspacing="20px" cellpadding="20px" bgcolor="lightskyblue">
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="fname">Full Name:</label>
+                            <br>
+                            <input type="text" id="fname" placeholder="Enter your full Name" maxlength="20" minlength="4" value="Sandra Anukam James Favour" readonly  autocomplete="on" required>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="uname">Username: <font color="red">*</font></label>
+                            <br>
+                            <input type="text" id="uname" placeholder="Enter Username (optional)" maxlength="20" minlength="4" value="" autofocus autocapitalize="on" pattern="[a-z]+">
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="age">Age: <font color="red">*</font></label>
+                            <br>
+                            <input type="number" id="age" value="13" size="100" min="13" required>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="dob">Date of Birth: <font color="red">*</font></label>
+                            <br>
+                            <input type="datetime-local" id="dob" required>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="mail">Email: <font color="red">*</font></label>
+                            <br>
+                            <input type="email" placeholder="Enter email address" id="mail" required>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="Password">Password: <font color="red">*</font></label>
+                            <br>
+                            <input type="password" id="Password" placeholder="Enter Password" maxlength="20" minlength="4" value="" autofocus autocapitalize="on" pattern="[a-z]+">
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="age">Gender: <font color="red">*</font></label>
+                            <br>
+                            <input type="radio" name="sex" id="male"><label for="male">Male</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="sex" id="female"><label for="female">Female</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="sex" checked id="other"><label for="other">Other</label>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="dob">Athletics: <font color="red">*</font></label>
+                            <br>
+                            <input type="checkbox" checked id="socc"><label for="socc">Soccer</label>   
+                            <input type="checkbox" id="voll"><label for="voll">Volley</label>   
+                            <input type="checkbox" id="hoc"><label for="hoc">Hockey</label>   
+                            <input type="checkbox" id="ten"><label for="ten">Tenis</label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="wd">Working Day: <font color="red">*</font></label>
+                            <br>
+                            <select id="wd">
+                                <option selected disabled>Select Day</option>
+                                <option value="Mon">Monday</option>
+                                <option value="Tue">Tuesday</option>
+                                <option value="Wed">Wednesday</option>
+                                <option value="">Thursday</option>
+                                <option value="">Friday</option>
+                                <option value="">Saturday</option>
+                                <option disabled>Sunday</option>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="wkd">Working Hour: <font color="red">*</font></label>
+                            <br>
+                            <input list="hours" id="wkd" placeholder="Select working Hour">
+                            <datalist id="hours">
+                                <option value="8:00am - 10:00am">
+                                <option value="10:00am - 12:00pm">
+                                <option value="12:00am - 2:00pm">
+                                <option value="2:00am - 4:00pm">
+                                <option value="4:00am - 6:00pm">
+                            </datalist>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="pic">Profile Picture: <font color="red">*</font></label>
+                            <br>
+                            <input type="file" id="pic" accept="image/*">
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="aud">Audio Voice: <font color="red">*</font></label>
+                            <br>
+                            <input type="file" id="aud" accept="audio/*">
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <label for="vid">Timeline Video: <font color="red">*</font></label>
+                            <br>
+                            <input type="file" id="vid" accept="video/*">
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <label for="txt">Users Bio: <font color="red">*</font></label>
+                            <br>
+                            <textarea id="txt" cols="30" rows="5" placeholder="Tell us who you are..."></textarea>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr><td><hr></td><td><hr></td></tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <center>
+                                <button type="submit">Submit</button>
+                                <button type="button">Click</button>
+                                <button type="reset">Clear</button>
+                            </center>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <center>
+                                <input type="submit" value="Submit">
+                                <input type="button" value="Click">
+                                <input type="reset" value="Clear">
+                            </center>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
